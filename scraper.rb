@@ -7,4 +7,3 @@ page_names = EveryPolitician::Wikidata.morph_wikinames(source: 'tmtmtmtm/saint-k
 cat_names = WikiData::Category.new('Category:Members of the National Assembly (Saint Kitts and Nevis)', 'en').member_titles
 
 EveryPolitician::Wikidata.scrape_wikidata(names: { en: page_names | cat_names }, output: false)
-warn EveryPolitician::Wikidata.notify_rebuilder
